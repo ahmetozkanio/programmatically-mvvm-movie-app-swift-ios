@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+
+enum APIURLs{
+    static func movies(page: Int) -> String{
+        "https://api.themoviedb.org/3/movie/popular?api_key=2faa2bdda699f241a1e3e8d7c9effaa1&language=en-US&page=\(page)"
+    }
+}

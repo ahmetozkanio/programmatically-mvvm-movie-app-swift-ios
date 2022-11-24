@@ -7,23 +7,44 @@
 
 import UIKit
 
-class HomeScreen: UIViewController {
+protocol HomeScreenProtocol: AnyObject{
+    func configureVC()
+    func configureCollectionView()
+}
 
+final class HomeScreen: UIViewController {
+    
+    private let viewModel = HomeViewModel()
+    
+    private var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .green
+        viewModel.view = self
+        viewModel.viewDidLoad()
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension HomeScreen: HomeScreenProtocol{
+   
+    func configureVC() {
+        
     }
-    */
-
+    
+    func configureCollectionView() {
+        collectionView = UICollectionView(frame: .zero,collectionViewLayout: UICollectionViewLayout())
+        view.addSubview(collectionView)
+        
+        collectionView.translatesAutoresizingMaskIntoConstraints = false // storyboard olmaz ise
+         
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+        collectionView.backgroundColor = .yellow
+    }
+    
 }

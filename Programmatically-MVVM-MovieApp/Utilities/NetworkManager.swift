@@ -3,7 +3,7 @@
 //  Programmatically-MVVM-MovieApp
 //
 //  Created by Ahmet Ozkan on 23.11.2022.
-//
+// 2faa2bdda699f241a1e3e8d7c9effaa1
 
 import Foundation
 

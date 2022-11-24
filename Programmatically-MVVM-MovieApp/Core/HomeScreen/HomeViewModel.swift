@@ -6,3 +6,24 @@
 //
 
 import Foundation
+
+protocol HomeViewModelProtocol{
+    var view: HomeScreenProtocol? { get set }
+    
+    func viewDidLoad()
+}
+
+final class HomeViewModel{
+    weak var view: HomeScreenProtocol?
+    
+}
+
+
+extension HomeViewModel: HomeViewModelProtocol{
+
+    func viewDidLoad(){
+        view?.configureVC()
+        view?.configureCollectionView()
+    }
+    
+}
