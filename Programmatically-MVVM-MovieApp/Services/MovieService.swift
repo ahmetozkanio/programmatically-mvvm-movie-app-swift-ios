@@ -9,9 +9,9 @@ import Foundation
 
 class MovieService{
     func downloadMovies(completion: @escaping([MovieResult]?) -> ()){
-        guard let url = URL(string: APIURLs.movies(page: 1)) else{ return }
+        guard let url = URL(string: APIURLs.movies(page: 1)) else { return }
         
-        NetworkManager.shared.download(url: url) {[weak self] result in
+        NetworkManager.shared.download(url: url) { [weak self] result in
             guard let self = self else { return }
             
             switch result{
