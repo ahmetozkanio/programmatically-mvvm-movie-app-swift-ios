@@ -38,13 +38,23 @@ extension HomeScreen: HomeScreenProtocol{
         
         collectionView.translatesAutoresizingMaskIntoConstraints = false // storyboard olmaz ise
          
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-        collectionView.backgroundColor = .yellow
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        collectionView.pinToEdgesOf(view: view)
     }
     
 }
+
+extension HomeScreen: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        UICollectionViewCell()
+    }
+    
+  
+}
+    
