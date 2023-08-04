@@ -33,6 +33,6 @@ class NetworkManager{
             
             completion(.success(data))
 
-        }
+        }.resume()
     }
 }

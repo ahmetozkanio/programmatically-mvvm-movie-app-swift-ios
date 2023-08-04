@@ -50,11 +50,14 @@ extension HomeScreen: HomeScreenProtocol{
 
 extension HomeScreen: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        viewModel.movies.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieCell.reuseID, for: indexPath) as! MovieCell
+        
+        cell.setCell(movie: viewModel.movies[indexPath.row])
+        cell.cellIndex = indexPath
         return cell
     }
     

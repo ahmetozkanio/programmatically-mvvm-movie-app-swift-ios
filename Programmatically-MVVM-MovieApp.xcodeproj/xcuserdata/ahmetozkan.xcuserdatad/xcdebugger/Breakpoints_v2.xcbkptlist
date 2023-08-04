@@ -30,8 +30,8 @@
             filePath = "Programmatically-MVVM-MovieApp/Core/HomeScreen/Components/MovieCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "configureCell()"
             landmarkType = "7">
          </BreakpointContent>
@@ -96,70 +96,38 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
             endingLineNumber = "15"
-            landmarkName = "downloadMovies(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BEB084EC-EE21-4785-A1CA-81C852A0AF94"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Programmatically-MVVM-MovieApp/Utilities/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "download(url:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8ED55FAE-D1FB-498D-8145-D302FE7B8A00"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Programmatically-MVVM-MovieApp/Utilities/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "download(url:completion:)"
+            landmarkName = "downloadMovies(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "8ED55FAE-D1FB-498D-8145-D302FE7B8A00 - ff83466096f5d07b"
+                  uuid = "C5A9FF3A-A407-4F13-BB26-D31A1F705032 - df384942b65a40a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Programmatically_MVVM_MovieApp.NetworkManager.download(url: Foundation.URL, completion: (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; () in Programmatically_MVVM_MovieApp.MovieService.downloadMovies(completion: (Swift.Optional&lt;Swift.Array&lt;Programmatically_MVVM_MovieApp.MovieResult&gt;&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Programmatically-MVVM-MovieApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmetozkan/Desktop/my-projects/programmatically-mvvm-movie-app-swift-ios/Programmatically-MVVM-MovieApp/Utilities/NetworkManager.swift"
+                  urlString = "file:///Users/ahmetozkan/Desktop/my-projects/programmatically-mvvm-movie-app-swift-ios/Programmatically-MVVM-MovieApp/Services/MovieService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
                   endingLineNumber = "15"
-                  offsetFromSymbolStart = "144">
+                  offsetFromSymbolStart = "140">
                </Location>
                <Location
-                  uuid = "8ED55FAE-D1FB-498D-8145-D302FE7B8A00 - d1c22180a5e12765"
+                  uuid = "C5A9FF3A-A407-4F13-BB26-D31A1F705032 - 78726c4e32e6036c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Programmatically_MVVM_MovieApp.NetworkManager.download(url: Foundation.URL, completion: (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; () in Programmatically_MVVM_MovieApp.MovieService.downloadMovies((Swift.Optional&lt;Swift.Array&lt;Programmatically_MVVM_MovieApp.MovieResult&gt;&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Programmatically-MVVM-MovieApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmetozkan/Desktop/my-projects/programmatically-mvvm-movie-app-swift-ios/Programmatically-MVVM-MovieApp/Utilities/NetworkManager.swift"
+                  urlString = "file:///Users/ahmetozkan/Desktop/my-projects/programmatically-mvvm-movie-app-swift-ios/Programmatically-MVVM-MovieApp/Services/MovieService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "280">
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "140">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -176,24 +144,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "downloadMovies(completion:)"
+            landmarkName = "downloadMovies(_:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4914E1A5-2616-44CC-BD30-4B928212EA7A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Programmatically-MVVM-MovieApp/Services/MovieService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "handleWithData(_:)"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1DD5F258-058D-47AB-88F7-87A8381F5861 - df384942b65a5ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; () in Programmatically_MVVM_MovieApp.MovieService.downloadMovies(completion: (Swift.Optional&lt;Swift.Array&lt;Programmatically_MVVM_MovieApp.MovieResult&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Programmatically-MVVM-MovieApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmetozkan/Desktop/my-projects/programmatically-mvvm-movie-app-swift-ios/Programmatically-MVVM-MovieApp/Services/MovieService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "1DD5F258-058D-47AB-88F7-87A8381F5861 - 78726c4e32e60289"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; () in Programmatically_MVVM_MovieApp.MovieService.downloadMovies((Swift.Optional&lt;Swift.Array&lt;Programmatically_MVVM_MovieApp.MovieResult&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Programmatically-MVVM-MovieApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmetozkan/Desktop/my-projects/programmatically-mvvm-movie-app-swift-ios/Programmatically-MVVM-MovieApp/Services/MovieService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "244">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -209,6 +193,38 @@
             startingLineNumber = "36"
             endingLineNumber = "36"
             landmarkName = "handleWithError(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E0ED9F5-9C48-4901-A6F0-C7985D6B7601"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Programmatically-MVVM-MovieApp/Services/MovieService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "handleWithData(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7D03AC4-C5AF-4E40-AC99-AE3489E40882"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Programmatically-MVVM-MovieApp/Core/HomeScreen/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "getMovies()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
