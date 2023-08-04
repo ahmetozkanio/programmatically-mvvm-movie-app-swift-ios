@@ -10,6 +10,8 @@ import UIKit
 protocol HomeScreenProtocol: AnyObject{
     func configureVC()
     func configureCollectionView()
+    func reloadCollectionView()
+    func navigateToDetailScreen(movie: MovieResult)
 }
 
 final class HomeScreen: UIViewController {
@@ -27,9 +29,12 @@ final class HomeScreen: UIViewController {
 }
 
 extension HomeScreen: HomeScreenProtocol{
+ 
+    
    
     func configureVC() {
-        
+        view.backgroundColor = .systemBackground
+        title = "Movies"
     }
     
     func configureCollectionView() {
@@ -46,6 +51,18 @@ extension HomeScreen: HomeScreenProtocol{
         collectionView.pinToEdgesOf(view: view)
     }
     
+    func reloadCollectionView() {
+        collectionView.reloadOnMainThread()
+    }
+    
+    func navigateToDetailScreen(movie: MovieResult) {
+        DispatchQueue.main.async {
+            let detailScreen = DetailScreen(movie: movie)
+            self.navigationController?.pushViewController(detailScreen, animated: true)
+        }
+    }
+    
+
 }
 
 extension HomeScreen: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -60,7 +77,23 @@ extension HomeScreen: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.cellIndex = indexPath
         return cell
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.getDetail(id: viewModel.movies[indexPath.item]._id)
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+  
+    }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        print("Decelerating")
+        
+        let offsetY = scrollView.contentOffset.y
+        let contentheigt = scrollView.contentSize.height
+        let height = scrollView.frame.size.height
+        
+        if offsetY >= contentheigt - (height * 2){
+            viewModel.getMovies()
+        }
+    }
   
 }
     

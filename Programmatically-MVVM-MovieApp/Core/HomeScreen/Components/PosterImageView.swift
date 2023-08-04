@@ -25,17 +25,19 @@ class PosterImageView: UIImageView {
     func downloadImage(movie: MovieResult){
         guard let url = URL(string: APIURLs.imageURL(posterPath: movie._posterPath)) else { return }
         
-        dataTask = URLSession.shared.dataTask(with: url) { data, _, _ in
-            guard let data = data else { return }
-            
-            DispatchQueue.main.async {
-                self.image = UIImage(data: data)
+        dataTask = NetworkManager.shared.download(url: url) { [weak self] result in
+            guard let self = self else { return }
+
+            switch result {
+            case .success(let data):
+                DispatchQueue.main.async {
+                    self.image = UIImage(data: data)
+                }
+                break
+            case .failure(_):
+                break
             }
-            
         }
-        
-        dataTask?.resume()
-        
     }
     
     func cancelDownloading() {

@@ -17,6 +17,8 @@
 		48640DF82A7BE4F500685E22 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48640DF72A7BE4F500685E22 /* CGFloatExtension.swift */; };
 		48640DFB2A7BE69A00685E22 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48640DFA2A7BE69A00685E22 /* MovieCell.swift */; };
 		48640DFD2A7BF36A00685E22 /* PosterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48640DFC2A7BF36A00685E22 /* PosterImageView.swift */; };
+		487D9B892A7D760F00E5D220 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D9B882A7D760F00E5D220 /* UICollectionViewExtension.swift */; };
+		487D9B8C2A7D7ADE00E5D220 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D9B8B2A7D7ADE00E5D220 /* DetailScreen.swift */; };
 		48BC4EAB292F795B00026F23 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4EAA292F795B00026F23 /* Movie.swift */; };
 		48BC4EAD292F897400026F23 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4EAC292F897400026F23 /* MovieService.swift */; };
 		48BC4EAF292F8EF400026F23 /* APIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC4EAE292F8EF400026F23 /* APIURLs.swift */; };
@@ -37,6 +39,8 @@
 		48640DF72A7BE4F500685E22 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		48640DFA2A7BE69A00685E22 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		48640DFC2A7BF36A00685E22 /* PosterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageView.swift; sourceTree = "<group>"; };
+		487D9B882A7D760F00E5D220 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		487D9B8B2A7D7ADE00E5D220 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 		48BC4EAA292F795B00026F23 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		48BC4EAC292F897400026F23 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		48BC4EAE292F8EF400026F23 /* APIURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURLs.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 		481F340D292EAB0100281C64 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				487D9B8A2A7D7AAE00E5D220 /* DetailScreen */,
 				481F340F292EAB7900281C64 /* HomeScreen */,
 			);
 			path = Core;
@@ -141,11 +146,20 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		487D9B8A2A7D7AAE00E5D220 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				487D9B8B2A7D7ADE00E5D220 /* DetailScreen.swift */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
 		48BC4EB2292FBC6F00026F23 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				48BC4EB3292FBCA600026F23 /* UIViewExtension.swift */,
 				48640DF72A7BE4F500685E22 /* CGFloatExtension.swift */,
+				487D9B882A7D760F00E5D220 /* UICollectionViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -222,8 +236,10 @@
 			files = (
 				48BC4EAD292F897400026F23 /* MovieService.swift in Sources */,
 				481F3413292EAC2D00281C64 /* NetworkManager.swift in Sources */,
+				487D9B892A7D760F00E5D220 /* UICollectionViewExtension.swift in Sources */,
 				48640DFB2A7BE69A00685E22 /* MovieCell.swift in Sources */,
 				481F33F7292EA28E00281C64 /* AppDelegate.swift in Sources */,
+				487D9B8C2A7D7ADE00E5D220 /* DetailScreen.swift in Sources */,
 				48640DF62A7BE43000685E22 /* UIHelper.swift in Sources */,
 				48BC4EB1292F900100026F23 /* HomeViewModel.swift in Sources */,
 				481F33F9292EA28E00281C64 /* SceneDelegate.swift in Sources */,

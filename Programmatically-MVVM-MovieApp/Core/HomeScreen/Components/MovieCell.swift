@@ -33,7 +33,6 @@ class MovieCell: UICollectionViewCell {
     
     func setCell(movie: MovieResult){
         posterImageView.downloadImage(movie: movie)
-        print("MovieCell created!! \(cellIndex?.row ?? 0)")
     }
     
     private func configureCell(){
